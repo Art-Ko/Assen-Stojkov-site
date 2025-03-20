@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title ..:: Assen Vasilev Stojkov ::..  Montáž, opravy, revize a zkoušky elektrických zařízení
+    link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    link rel="stylesheet" href="/styles.scss"
+    meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      .container
+        a.navbar-brand href="/" Assen Vasilev Stojkov
+        button.navbar-toggler type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link href="/contact" ...
+    .container
+      == yield
+    footer.text-center.absolute.col-md-12
+      p
+        | &copy; 2024 - #{Time.now.year} Assen Vasilev Stojkov
+    script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"
+    script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
