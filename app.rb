@@ -6,6 +6,8 @@ require 'uglifier'
 require 'coffee_script'
 require 'sinatra/contrib'
 
+set :port, 8080
+set :views, "views"
 
 configure :staging do
   enable :reloader
@@ -16,7 +18,7 @@ configure do
   set :scss, { :style => :expanded, :debug_info => false }
 end
 
-get '/styles.scss' do
+get 'styles.scss' do
   scss :styles
 end
 
