@@ -6,3 +6,4 @@ gem 'sass'
 gem 'slim'
 gem 'uglifier'
 gem 'coffee-script'
+
