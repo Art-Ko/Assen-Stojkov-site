@@ -6,12 +6,12 @@ require 'uglifier'
 require 'coffee_script'
 require 'sinatra/contrib'
 
-set :port, 80
+set :bind, '0.0.0.0'
+set :port, ENV['PORT'] || 4567
 
 configure :staging do
   enable :reloader
 end
-
 
 configure do
   set :scss, { :style => :expanded, :debug_info => false }
