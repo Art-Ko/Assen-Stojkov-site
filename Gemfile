@@ -7,3 +7,4 @@ gem 'slim'
 gem 'uglifier'
 gem 'coffee-script'
 
+gem 'puma'
