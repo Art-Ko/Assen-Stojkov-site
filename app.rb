@@ -7,7 +7,7 @@ require 'coffee_script'
 require 'sinatra/contrib'
 
 set :bind, '0.0.0.0'
-set :port, ENV['PORT'] || 4567
+set :port, ENV['PORT'] || 10000
 
 configure :staging do
   enable :reloader
