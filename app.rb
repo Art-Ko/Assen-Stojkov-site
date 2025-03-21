@@ -6,8 +6,8 @@ require 'uglifier'
 require 'coffee_script'
 require 'sinatra/contrib'
 
-set :port, 8080
-set :views, "views"
+set :port, 80
+set :ip, 0.0.0.0
 
 configure :staging do
   enable :reloader
