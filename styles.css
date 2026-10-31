@@ -1,0 +1,55 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #dfe2e6, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+.jumbotron {
+  background: linear-gradient(to bottom, #ffffff, #dfe2e6);
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  padding: 100px 20px;
+  margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: auto;
+  min-height: 5em;
+  padding: 1.5em 0;
+  color: #c0c5ce;
+  text-align: center;
+}
+footer a {
+  color: #8b9dc3 !important;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+#contact-form {
+  margin-top: 20px;
+}
+#contact-form .form-group {
+  margin-bottom: 15px;
+}
+#contact-form label {
+  font-weight: bold;
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  border-radius: 0;
+}
